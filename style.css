@@ -1,0 +1,447 @@
+:root {
+    /* Tons de Amarelo */
+    --yellow-primary: #FFD700;   /* Amarelo vibrante - clássico do Setembro Amarelo */
+    --yellow-light: #FFFACD;     /* Amarelo pastel, para fundos e detalhes suaves (modo claro) */
+    --yellow-dark: #DAA520;      /* Amarelo dourado/escuro, para destaques e contraste */
+
+    /* Cores Secundárias e de Texto */
+    --color-secondary: #2C3E50; /* Azul Marinho (quase preto) - para textos e elementos escuros (modo claro) */
+    --color-text-light: #F8F9FA; /* Branco Off-white - para fundos de seções de conteúdo (modo claro) */
+    --color-accent: #007BFF;    /* Azul de Ação - para botões e links */
+    --color-success: #28A745;   /* Verde para mensagens positivas */
+
+    /* Cores de Fundo (para Light/Dark Mode) */
+    --color-background-light: #ECF0F1; /* Cinza claro para fundo geral do site */
+    --color-background-dark: #1A1A1A;  /* Fundo para Dark Mode */
+
+    /* Variáveis para tipografia */
+    --font-heading: 'Poppins', sans-serif; /* Fonte moderna para títulos */
+    --font-body: 'Lato', sans-serif;       /* Fonte legível para corpo */
+
+    /* Variáveis para espaçamento */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 48px;
+
+    /* Variáveis para transições */
+    --transition-speed: 0.3s ease;
+}
+
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background-light);
+    color: var(--color-secondary);
+    line-height: 1.6;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* --- ESTILOS PARA O MODO ESCURO --- */
+body.dark-mode {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light); /* Texto principal branco/claro */
+}
+
+body.dark-mode header {
+    background-color: #333; /* Um tom mais escuro para o cabeçalho no dark mode */
+    color: var(--color-text-light);
+}
+
+body.dark-mode header h1 {
+    color: var(--yellow-primary); /* Título principal ainda amarelo vibrante */
+}
+
+body.dark-mode nav ul li a {
+    color: var(--color-text-light); /* Links do menu em branco no dark mode */
+}
+
+body.dark-mode nav ul li a::after {
+    background-color: var(--yellow-primary); /* Linha do hover em amarelo vibrante */
+}
+
+body.dark-mode .hero-section {
+    /* Ajustar gradiente para ser mais suave no dark mode, mantendo a tonalidade amarela */
+    background: linear-gradient(rgba(26,26,26,0.7), rgba(44,62,80,0.7)), url('https://via.placeholder.com/1920x600/FFD700/333?text=Setembro+Amarelo') no-repeat center center/cover;
+    background-blend-mode: multiply; /* Mistura a imagem com a cor do gradiente */
+}
+
+body.dark-mode .content-section {
+    background-color: var(--color-secondary); /* Fundos das seções de conteúdo em azul marinho no dark mode */
+    color: var(--color-text-light);
+}
+
+body.dark-mode .content-section h2 {
+    color: var(--yellow-primary); /* Títulos das seções em amarelo vibrante */
+}
+
+body.dark-mode .content-section h3 {
+    color: var(--yellow-light); /* Subtítulos em um amarelo mais claro */
+}
+
+body.dark-mode .depoimento-card {
+    background-color: #3C4E60; /* Um tom um pouco mais claro que o secondary para os cards no dark mode */
+    border-left-color: var(--yellow-dark); /* Borda em amarelo dourado */
+    color: var(--color-text-light);
+}
+
+body.dark-mode .depoimento-card h3 {
+    color: var(--yellow-primary); /* Título do depoimento em amarelo principal */
+}
+
+body.dark-mode .highlight {
+    color: var(--yellow-primary); /* Destaques em amarelo principal */
+}
+
+body.dark-mode .disclaimer-text {
+    color: #CCC; /* Texto de aviso mais claro */
+}
+
+body.dark-mode footer {
+    background-color: #1A1A1A; /* Fundo do footer no dark mode */
+    color: var(--color-text-light);
+}
+
+/* --- FIM DOS ESTILOS PARA O MODO ESCURO --- */
+
+
+/* Estilos comuns */
+header {
+    background-color: var(--yellow-primary);
+    color: var(--color-secondary);
+    padding: var(--spacing-md) 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    margin: 0;
+    font-size: 2.8em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-sm) 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+}
+
+nav ul li a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color var(--transition-speed);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--yellow-dark);
+    transition: width var(--transition-speed);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(255,215,0,0.7), rgba(218,165,32,0.7)), url('https://via.placeholder.com/1920x600/FFD700/333?text=Setembro+Amarelo') no-repeat center center/cover;
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 150px var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.hero-section h2 {
+    font-family: var(--font-heading);
+    font-size: 3.5em;
+    margin-bottom: var(--spacing-sm);
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: var(--spacing-lg);
+    animation: fadeInUp 1.2s ease-out;
+}
+
+button {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color var(--transition-speed), transform 0.2s ease-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.content-section {
+    padding: var(--spacing-lg) var(--spacing-md);
+    max-width: 1000px;
+    margin: var(--spacing-lg) auto;
+    background-color: var(--color-text-light);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.content-section h2 {
+    font-family: var(--font-heading);
+    color: var(--yellow-primary);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    font-size: 2.8em;
+}
+
+.content-section h3 {
+    font-family: var(--font-heading);
+    color: var(--color-secondary);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.depoimento-card {
+    background-color: var(--yellow-light);
+    border-left: 6px solid var(--yellow-dark);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.depoimento-card h3 {
+    color: var(--color-secondary);
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.help-line {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: var(--yellow-dark);
+}
+
+.external-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.external-link:hover {
+    text-decoration: underline;
+}
+
+.disclaimer-text {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
+/* Estilos para o container das opções do quiz */
+.options-container {
+    display: flex; /* Transforma o container em um flex container */
+    flex-direction: column; /* Organiza os itens (botões) em uma coluna */
+    gap: 10px; /* Adiciona um espaço entre os botões */
+    margin-top: 20px;
+}
+
+/* Estilos para os botões de opção do quiz */
+.quiz-option-btn {
+    background-color: var(--color-accent); /* Cor azul de ação para os botões */
+    color: var(--color-text-light);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; /* Cantos levemente arredondados */
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%; /* Faz com que o botão ocupe toda a largura disponível */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
+    transition: background-color var(--transition-speed), transform 0.2s ease-out;
+}
+
+.quiz-option-btn:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+    transform: translateY(-2px); /* Leve elevação */
+}
+
+/* Estilos para quando a resposta é correta ou incorreta */
+.quiz-option-btn.correct {
+    background-color: var(--color-success) !important; /* Verde para resposta correta */
+}
+
+.quiz-option-btn.incorrect {
+    background-color: #dc3545 !important; /* Vermelho para resposta incorreta */
+}
+
+/* Estilos para a nova seção de Podcasts */
+.podcast-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.podcast-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-secondary); /* Cor normal para links de podcast no modo claro */
+    font-weight: bold;
+    transition: transform 0.2s ease-out;
+}
+
+body.dark-mode .podcast-links a {
+    color: var(--color-text-light); /* Links de podcast em branco no dark mode */
+}
+
+.podcast-links a:hover {
+    transform: translateY(-5px);
+}
+
+.podcast-links img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: var(--spacing-xs);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Botão de Dark Mode */
+#darkModeToggle {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background: none;
+    border: 2px solid var(--color-secondary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secondary);
+    transition: background-color var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed);
+}
+
+body.dark-mode #darkModeToggle {
+    border-color: var(--color-text-light);
+    color: var(--color-text-light);
+}
+
+#darkModeToggle:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+body.dark-mode #darkModeToggle:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+footer {
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: var(--spacing-md) 0;
+    margin-top: var(--spacing-lg);
+    font-size: 0.9em;
+}
+
+/* Animações Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade Aprimorada */
+@media (max-width: 768px) {
+    .hero-section h2 {
+        font-size: 2.5em;
+    }
+    .hero-section p {
+        font-size: 1.2em;
+    }
+    .content-section h2 {
+        font-size: 2.2em;
+    }
+    nav ul {
+        gap: var(--spacing-sm);
+    }
+    #darkModeToggle {
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+    }
+    .podcast-links img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 100px var(--spacing-sm);
+        min-height: 300px;
+    }
+    .hero-section h2 {
+        font-size: 2em;
+    }
+    .hero-section p {
+        font-size: 1em;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
