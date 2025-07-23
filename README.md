@@ -1,1 +1,114 @@
-# setembro
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setembro Amarelo: A Vida Vale a Pena!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Setembro Amarelo</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#musicas">Podcasts</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#ajuda">Precisa de Ajuda?</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" aria-label="Alternar modo escuro">🌙</button>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h2>Prevenção ao Suicídio é Conversar</h2>
+            <p>Um movimento para salvar vidas. Você não está sozinho(a).</p>
+            <button onclick="window.location.href='#ajuda'">Precisa de Ajuda Agora?</button>
+        </section>
+
+        <section id="historia" class="content-section">
+            <h2>História do Setembro Amarelo</h2>
+            <p>A campanha Setembro Amarelo tem suas raízes em uma história comovente que nasceu nos Estados Unidos. Conhecer essa origem é entender a força e a necessidade desse movimento.</p>
+            <h3>A Origem da Fita Amarela: O Caso de Mike Emme</h3>
+            <p>O pontapé inicial para o que viria a ser o Setembro Amarelo ocorreu em 1994, com a triste história de Mike Emme, um jovem de 17 anos que tirou a própria vida. Mike era conhecido por ser um rapaz atencioso e por restaurar um Ford Mustang 68, que ele pintou de amarelo vibrante.</p>
+            <p>No dia de seu funeral, seus amigos e familiares, ainda chocados e buscando uma forma de homenageá-lo e conscientizar sobre o tema, amarraram fitas amarelas nos cartões de lembrança. Nesses cartões, eles escreveram a mensagem "Se precisar, peça ajuda", incentivando as pessoas a não guardarem sua dor. A cor amarela foi escolhida em referência ao carro de Mike, simbolizando também a esperança, a luz e a vida.</p>
+            <h3>O Projeto Yellow Ribbon e a Expansão</h3>
+            <p>A iniciativa dos amigos de Mike deu origem ao "Yellow Ribbon Program" (Programa Fita Amarela). Esse projeto, liderado por Dale Emme e Darlene Souder, pais e amigos de Mike, respectivamente, começou a distribuir cartões e fitas amarelas em eventos e escolas, sempre com informações de contato para auxílio. A ideia era clara: oferecer uma ponte para a ajuda, mostrando que há suporte disponível e que falar sobre o suicídio não o incentiva, mas o previne.</p>
+            <p>O Programa Fita Amarela cresceu e se espalhou por diversos estados norte-americanos, tornando-se um símbolo da prevenção ao suicídio e da importância da intervenção e do apoio emocional.</p>
+            <h3>A Chegada do Setembro Amarelo ao Brasil</h3>
+            <p>No Brasil, a campanha Setembro Amarelo foi oficialmente adotada em 2015. Essa iniciativa crucial partiu de três grandes entidades: o CVV (Centro de Valorização da Vida), o Conselho Federal de Medicina (CFM) e a Associação Brasileira de Psiquiatria (ABP). Eles se uniram para trazer essa importante mobilização para a realidade brasileira, adaptando a ideia da fita amarela e do mês de setembro (pela data de conscientização mundial) como um período de intensificação da discussão sobre o tema.</p>
+            <p>Desde então, a cada ano, o Setembro Amarelo ganha mais força no país, com a realização de palestras, caminhadas, iluminação de monumentos e diversas ações de conscientização. O principal objetivo é romper o silêncio e o estigma em torno do suicídio, mostrando que ele é um problema de saúde pública que pode ser prevenido. A campanha enfatiza que "Falar é a Melhor Solução" e que a vida sempre vale a pena.</p>
+            <p>Ao longo dos anos, o movimento se consolidou como um símbolo de esperança e solidariedade, reforçando que oferecer escuta, acolhimento e incentivar a busca por ajuda profissional são atos de amor e responsabilidade social.</p>
+            </section>
+
+        <section id="musicas" class="content-section">
+            <h2>Podcasts</h2>
+            <p>Em meio à correria e aos desafios da vida moderna, encontrar um momento para cuidar da nossa saúde mental se tornou mais importante do que nunca. Pensando nisso, o CVV (Centro de Valorização da Vida), conhecido por seu serviço de apoio emocional e prevenção do suicídio, expandiu sua atuação para o universo dos podcasts.</p>
+            <p>Com uma proposta acolhedora e informativa, os podcasts do CVV se tornam uma companhia discreta e um porto seguro para quem busca reflexão, informação e, acima de tudo, acolhimento. Diferente dos atendimentos diretos pelo telefone 188 ou chat, os podcasts oferecem conteúdo que pode ser acessado a qualquer momento, no seu ritmo, em plataformas como Spotify, Deezer ou YouTube.</p>
+            <h3>Nesses episódios, você encontrará conversas sobre:</h3>
+            <ul>
+                <li>Saúde mental no cotidiano: Como lidar com a ansiedade, o estresse, a depressão e outros desafios emocionais que fazem parte da vida.</li>
+                <li>Autocuidado e bem-estar: Dicas práticas e reflexões sobre a importância de olhar para si, cultivar hábitos saudáveis e desenvolver a resiliência.</li>
+                <li>Prevenção do suicídio: Informações claras e desmistificadas sobre o tema, com orientações sobre como identificar sinais de alerta e oferecer ajuda a quem precisa, sempre com a seriedade e o respeito que o assunto exige.</li>
+                <li>Depoimentos e histórias inspiradoras: Relatos de superação e esperança, mostrando que não estamos sozinhos em nossas batalhas e que é possível encontrar apoio e luz.</li>
+            </ul>
+            <p>Os podcasts do CVV são uma extensão da missão da instituição: oferecer apoio emocional e promover a vida. Eles servem como um lembrete gentil de que falar sobre o que sentimos é o primeiro passo para o bem-estar e que a informação é uma aliada poderosa na construção de uma sociedade mais consciente e empática. Se você busca um conteúdo que nutre a mente e o coração, os podcasts do CVV são uma excelente opção para incluir na sua rotina. Uma escuta que faz a diferença, mostrando que sempre há alguém disposto a conversar.</p>
+            <div class="video-container"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/6JR6i6xAEkxKHqaYol5E2O?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section id="quiz" class="content-section">
+            <h2>Teste Seus Conhecimentos</h2>
+            <p>Desafie-se e aprenda mais sobre saúde mental e prevenção do suicídio de forma interativa. O conhecimento é uma ferramenta poderosa para ajudar a si mesmo e ao próximo.</p>
+            <div id="quiz-container">
+                <button id="startQuizBtn">Iniciar Quiz</button>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="content-section">
+            <h2>Depoimentos de Superação</h2>
+            <p>Leia histórias reais de pessoas que enfrentaram momentos difíceis, buscaram ajuda e hoje são exemplos de força e resiliência. Suas experiências iluminam o caminho de quem ainda está na escuridão.</p>
+
+            <div class="depoimento-card">
+                <h3>"Achei a luz no fim do túnel" - Maria S., 32 anos</h3>
+                <p>"Depois de um período muito difícil, onde a ansiedade e a tristeza me paralisavam, decidi procurar ajuda. Foi um passo enorme, mas a terapia e o apoio da minha família foram essenciais. Hoje, vejo a vida com mais cor e valorizo cada pequeno momento. Se você está lutando, por favor, não desista. A luz existe!"</p>
+            </div>
+
+            <div class="depoimento-card">
+                <h3>"A conversa que salvou minha vida" - Carlos Eduardo, 45 anos</h3>
+                <p>"Me senti sem chão após perder o emprego e enfrentar problemas familiares. Me isolei completamente. Minha esposa percebeu meu sofrimento e me convenceu a ligar para o CVV. Aquela primeira conversa foi um alívio imenso. Entendi que eu não precisava carregar tudo sozinho. A partir dali, busquei acompanhamento psiquiátrico e hoje sou uma nova pessoa. Falar salva."</p>
+            </div>
+
+            <div class="depoimento-card">
+                <h3>"Eu não estava sozinho(a)" - Ana Clara, 25 anos</h3>
+                <p>"A pressão de ser perfeita e a constante sensação de não ser boa o suficiente me levaram a um lugar muito escuro. Guardava tudo para mim. Uma amiga próxima percebeu minhas mudanças e insistiu para que eu procurasse ajuda. Ela me levou à primeira consulta com a psicóloga e nunca me abandonou. Aprendi que pedir ajuda é um ato de coragem, não de fraqueza. A vida vale a pena ser vivida e sentir-se melhor é possível."</p>
+            </div>
+
+            <div class="depoimento-card">
+                <h3>"Apoio da família foi fundamental" - João P., 50 anos</h3>
+                <p>"Lutei contra a depressão por muitos anos sem que ninguém soubesse a profundidade do meu sofrimento. Quando minha família finalmente soube, eles foram meu porto seguro. Ajudaram-me a encontrar um bom profissional e me deram todo o suporte emocional. Hoje, sei que o amor e a compreensão podem mover montanhas. Não subestime o poder de uma rede de apoio."</p>
+            </div>
+
+            <button id="submitDepoimentoBtn">Envie seu Depoimento</button>
+            <p class="disclaimer-text">Os depoimentos são publicados mediante moderação e não substituem o acompanhamento profissional. Se precisar de ajuda imediata, vá para a seção "Precisa de Ajuda?".</p>
+        </section>
+
+        <section id="ajuda" class="content-section contact-section">
+            <h2>Precisa de Ajuda? Não HESITE!</h2>
+            <p>Se você ou alguém que conhece está passando por um momento difícil e precisa de apoio emocional, não hesite em procurar ajuda. Você não precisa enfrentar isso sozinho(a).</p>
+            <p class="help-line">📞 CVV (Centro de Valorização da Vida): Ligue para <span class="highlight">188</span> (ligação gratuita, disponível 24 horas por dia)</p>
+            <p class="help-line">🌐 Chat CVV: Acesse <a href="https://www.cvv.org.br/" target="_blank" class="external-link">www.cvv.org.br</a> para conversar online.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Setembro Amarelo. Todos os direitos reservados. Em parceria com o CVV e outras organizações.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
